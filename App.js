@@ -9,14 +9,17 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar style="auto" />
       <View style={styles.header}>
-        <Image style={styles.nzinho} source={require('./icones/nzinho.png')}/>
-        <Image style={styles.nzinho} source={require('./icones/perfil.png')}/> 
+        <Image style={styles.logoECT} source={require('./icones/logoECT.png')}/>
+        <Image style={styles.perfil} source={require('./icones/perfil.jpg')}/> 
       </View>
 
       <View style={styles.aba}>
-        <Text>Séries</Text>
-        <Text>Filmes</Text>
-        <Text>Categorias</Text>
+        <Text>Pré-Calculo</Text>
+        <Text>Calculo I</Text>
+        <Text>VGA</Text>
+        <Text>Quimica</Text>
+        <Text>CTS</Text>
+        <Text>PLE I</Text>
       </View>
 
       <View style={styles.continue}>
@@ -43,7 +46,7 @@ const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',
     height: 60,
-    backgroundColor: '#000',
+    backgroundColor: '#003153',
     alignItems: 'center',
     justifyContent: 'space-between',
     padding: 5,
@@ -58,7 +61,7 @@ const styles = StyleSheet.create({
     padding: 7,
     },
     
-  nzinho: {
+  logoECT: {
     height: 40,
     width: 40,
   },
@@ -78,6 +81,12 @@ const styles = StyleSheet.create({
   foto: {
     height: 110,
     width: 90,
+  },
+
+  perfil: {
+    height: 40,
+    width: 40,
+    borderRadius: 20,
   },
 });
 
